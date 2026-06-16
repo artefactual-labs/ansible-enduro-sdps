@@ -13,13 +13,6 @@
     name: enduro-am-worker
     state: restarted
 
-- name: restart preprocessing-worker
-  become: true
-  systemd:
-    daemon_reload: true
-    name: preprocessing-worker
-    state: restarted
-
 - name: restart rsyslog
   become: true
   systemd:
