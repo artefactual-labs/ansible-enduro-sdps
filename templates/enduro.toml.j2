@@ -169,6 +169,22 @@ tenantID = "{{ enduro_storage_internal_storage_azure_tenant_id }}"
 clientID = "{{ enduro_storage_internal_storage_azure_client_id }}"
 clientSecret = "{{ enduro_storage_internal_storage_azure_client_secret }}"
 
+[a3m.aipStaging]
+url = "{{enduro_storage_internal_storage_url }}"
+endpoint = "{{enduro_storage_internal_storage_endpoint }}"
+pathStyle = "{{enduro_storage_internal_storage_pathStyle }}"
+accessKey = "{{enduro_storage_internal_storage_key }}"
+secretKey = "{{enduro_storage_internal_storage_secret }}"
+region = "{{enduro_storage_internal_storage_region }}"
+bucket = "{{enduro_storage_internal_storage_bucket }}"
+
+[a3m.aipStaging.azure]
+storageAccount = "{{ enduro_storage_internal_storage_azure_account }}"
+storageKey = "{{ enduro_storage_internal_storage_azure_key }}"
+tenantID = "{{ enduro_storage_internal_storage_azure_tenant_id }}"
+clientID = "{{ enduro_storage_internal_storage_azure_client_id }}"
+clientSecret = "{{ enduro_storage_internal_storage_azure_client_secret }}"
+
 [storage.event]
 redisAddress = "redis://127.0.0.1:6379"
 redisChannel = "enduro-storage-events"
