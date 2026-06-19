@@ -100,6 +100,7 @@ enduro_db_name: "enduro"
 enduro_db_port: "3306"
 
 # Other Enduro settings
+enduro_ingest_allow_duplicates: false
 enduro_upload_max_size: 4294967296 # 4 GiB
 enduro_upload_retention_period: "0s"
 enduro_auditlog_filepath: "/var/log/enduro/audit.log"

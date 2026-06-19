@@ -132,6 +132,9 @@ sharedPath = "{{ child_workflow.sharedPath }}"
 enabled = true
 xsdPath = "/etc/premis.xsd"
 
+[ingest]
+allowDuplicates = {{ enduro_ingest_allow_duplicates | bool | lower }}
+
 [ingest.storage]
 address = "{{ enduro_ingest_storage_address }}"
 defaultPermanentLocationId = "{{ enduro_ingest_storage_default_permanent_location_id }}"
