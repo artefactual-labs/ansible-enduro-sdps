@@ -132,6 +132,13 @@ sharedPath = "{{ child_workflow.sharedPath }}"
 enabled = true
 xsdPath = "/etc/premis.xsd"
 
+[bagit]
+checksumAlgorithm = "{{ enduro_bagit_checksum_algorithm }}"
+
+[bagitValidator]
+cacheDir = "{{ enduro_bagit_validator_cache_dir }}"
+poolSize = {{ enduro_bagit_validator_pool_size }}
+
 [ingest]
 allowDuplicates = {{ enduro_ingest_allow_duplicates | bool | lower }}
 
