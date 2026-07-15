@@ -32,6 +32,14 @@
     state: present
     disable_gpg_check: "{{ not enduro_rpm_gpg_check_enabled|bool }}"
 
+- name: Ensure the Enduro home directory is writable
+  file:
+    path: /var/lib/enduro
+    state: directory
+    owner: "{{ enduro_system_user }}"
+    group: "{{ enduro_system_group }}"
+    mode: "0755"
+
 - name: "Create config file"
   template:
      src: "etc/sysconfig/enduro-am-worker.j2"
