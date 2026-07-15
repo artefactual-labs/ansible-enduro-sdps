@@ -112,7 +112,6 @@ migrate = true
 
 [[childWorkflows]]
 type = "{{ child_workflow.type }}"
-namespace = "{{ child_workflow.namespace }}"
 taskQueue = "{{ child_workflow.taskQueue }}"
 workflowName = "{{ child_workflow.workflowName }}"
 {% if child_workflow.extract is defined %}
