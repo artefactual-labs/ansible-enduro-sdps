@@ -1,7 +1,7 @@
 [Unit]
 Description=Enduro AM worker
 AssertFileIsExecutable=/usr/bin/enduro-am-worker
-
+After=temporal.service
 
 [Service]
 Type=simple
